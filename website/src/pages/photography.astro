@@ -1,0 +1,4 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';import {brandSlides} from '../data/landscapes';
+---
+<BaseLayout title="网站摄影"><article class="container policy-page"><p class="section-label">Our visual journal</p><h1>镜头里的旅途</h1><p>网站背景由品牌方提供，展示城市、湖泊与雪山。风景图片用于旅途氛围展示，并非房源窗景；实际住宿照片请查看各房源相册。</p><div class="background-source-list">{brandSlides.map(photo=><section><h2>{photo.alt}</h2><p>{photo.caption}</p></section>)}</div><a class="text-link" href="/gallery/">查看住宿实拍</a></article></BaseLayout>

@@ -1,0 +1,6 @@
+---
+import ResponsiveImage from './ResponsiveImage.astro';import type {Photo} from '../data/properties';
+interface Props{photos:Photo[];title?:string;class?:string;limit?:number;}
+const {photos,title='Victoria House · 实拍影像',class:className='',limit}=Astro.props;const shown=limit?photos.slice(0,limit):photos;
+---
+<div class:list={['editorial-gallery',className]} data-gallery-group data-gallery-title={title}>{shown.map((photo,i)=><figure class={`gallery-item gallery-item-${i%4}`}><button type="button" class="gallery-photo" data-lightbox data-original={photo.original} data-alt={photo.alt} data-caption={photo.caption} aria-label={`全屏查看：${photo.caption}`}><ResponsiveImage photo={photo}/><span class="gallery-open" aria-hidden="true">+</span></button><figcaption>{photo.caption}</figcaption></figure>)}</div>

@@ -1,0 +1,34 @@
+meta:
+  name: Victoria House
+  register: brand
+  persona: cinematic dark hospitality
+dials:
+  soul: 8
+  spectacle: 5
+  density: 3
+color:
+  background: '#0D1010'
+  surface: '#151919'
+  ink: '#F0EDE5'
+  muted: '#AAAEAD'
+  accent: '#C5B18F'
+  border: 'rgba(224,222,208,.17)'
+type:
+  display: Cormorant Garamond
+  chinese_display: Noto Serif SC
+  body: Manrope
+layout:
+  max_width: 1400px
+  inline_padding: clamp(24px,5vw,80px)
+  vertical_space: clamp(80px,10vw,160px)
+  mobile: independent compositions and fullscreen navigation
+motion:
+  hero: seven owner photos; 1.jpg first, remaining by descending luminance; WebGL fog dissolve with CSS fallback, swipe and pause
+  reduced_motion: user explicitly keeps hero fog dissolve and autoplay; other page motion stays reduced
+  hover_scale: 1.02
+  easing: cubic-bezier(.16,1,.3,1)
+image:
+  full_photo_darkening: false
+  overlays: local text contrast only
+  preserve_originals: true
+  scroll: progressive reveals and native scroll-linked landscape depth

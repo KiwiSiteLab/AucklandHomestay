@@ -1,0 +1,230 @@
+[
+  {
+    "id": "room1",
+    "name": "明亮日常",
+    "number": "1",
+    "photos": [
+      {
+        "src": "assets/room1-01-1448.webp",
+        "original": "assets/room1-01.jpg",
+        "width": 1448,
+        "height": 1086,
+        "srcset": "assets/room1-01-320.webp 320w, assets/room1-01-480.webp 480w, assets/room1-01-640.webp 640w, assets/room1-01-960.webp 960w, assets/room1-01-1448.webp 1448w",
+        "alt": "明亮日常 · 实拍照片 1",
+        "avifSrcset": "assets/room1-01-320.avif 320w, assets/room1-01-480.avif 480w, assets/room1-01-640.avif 640w, assets/room1-01-960.avif 960w, assets/room1-01-1448.avif 1448w"
+      },
+      {
+        "src": "assets/room1-02-1448.webp",
+        "original": "assets/room1-02.jpg",
+        "width": 1448,
+        "height": 1086,
+        "srcset": "assets/room1-02-320.webp 320w, assets/room1-02-480.webp 480w, assets/room1-02-640.webp 640w, assets/room1-02-960.webp 960w, assets/room1-02-1448.webp 1448w",
+        "alt": "明亮日常 · 实拍照片 2",
+        "avifSrcset": "assets/room1-02-320.avif 320w, assets/room1-02-480.avif 480w, assets/room1-02-640.avif 640w, assets/room1-02-960.avif 960w, assets/room1-02-1448.avif 1448w"
+      },
+      {
+        "src": "assets/room1-03-1448.webp",
+        "original": "assets/room1-03.jpg",
+        "width": 1448,
+        "height": 1086,
+        "srcset": "assets/room1-03-320.webp 320w, assets/room1-03-480.webp 480w, assets/room1-03-640.webp 640w, assets/room1-03-960.webp 960w, assets/room1-03-1448.webp 1448w",
+        "alt": "明亮日常 · 实拍照片 3",
+        "avifSrcset": "assets/room1-03-320.avif 320w, assets/room1-03-480.avif 480w, assets/room1-03-640.avif 640w, assets/room1-03-960.avif 960w, assets/room1-03-1448.avif 1448w"
+      },
+      {
+        "src": "assets/room1-04-1448.webp",
+        "original": "assets/room1-04.jpg",
+        "width": 1448,
+        "height": 1086,
+        "srcset": "assets/room1-04-320.webp 320w, assets/room1-04-480.webp 480w, assets/room1-04-640.webp 640w, assets/room1-04-960.webp 960w, assets/room1-04-1448.webp 1448w",
+        "alt": "明亮日常 · 实拍照片 4",
+        "avifSrcset": "assets/room1-04-320.avif 320w, assets/room1-04-480.avif 480w, assets/room1-04-640.avif 640w, assets/room1-04-960.avif 960w, assets/room1-04-1448.avif 1448w"
+      },
+      {
+        "src": "assets/room1-05-1448.webp",
+        "original": "assets/room1-05.jpg",
+        "width": 1448,
+        "height": 1086,
+        "srcset": "assets/room1-05-320.webp 320w, assets/room1-05-480.webp 480w, assets/room1-05-640.webp 640w, assets/room1-05-960.webp 960w, assets/room1-05-1448.webp 1448w",
+        "alt": "明亮日常 · 实拍照片 5",
+        "avifSrcset": "assets/room1-05-320.avif 320w, assets/room1-05-480.avif 480w, assets/room1-05-640.avif 640w, assets/room1-05-960.avif 960w, assets/room1-05-1448.avif 1448w"
+      },
+      {
+        "src": "assets/room1-06-1440.webp",
+        "original": "assets/room1-06.jpg",
+        "width": 1440,
+        "height": 907,
+        "srcset": "assets/room1-06-320.webp 320w, assets/room1-06-480.webp 480w, assets/room1-06-640.webp 640w, assets/room1-06-960.webp 960w, assets/room1-06-1440.webp 1440w",
+        "alt": "明亮日常 · 实拍照片 6",
+        "avifSrcset": "assets/room1-06-320.avif 320w, assets/room1-06-480.avif 480w, assets/room1-06-640.avif 640w, assets/room1-06-960.avif 960w, assets/room1-06-1440.avif 1440w"
+      },
+      {
+        "src": "assets/room1-07-480.webp",
+        "original": "assets/room1-07.jpg",
+        "width": 480,
+        "height": 249,
+        "srcset": "assets/room1-07-320.webp 320w, assets/room1-07-480.webp 480w",
+        "alt": "明亮日常 · 实拍照片 7",
+        "avifSrcset": "assets/room1-07-320.avif 320w, assets/room1-07-480.avif 480w"
+      },
+      {
+        "src": "assets/room1-08-1278.webp",
+        "original": "assets/room1-08.jpg",
+        "width": 1278,
+        "height": 1704,
+        "srcset": "assets/room1-08-320.webp 320w, assets/room1-08-480.webp 480w, assets/room1-08-640.webp 640w, assets/room1-08-960.webp 960w, assets/room1-08-1278.webp 1278w",
+        "alt": "明亮日常 · 实拍照片 8",
+        "avifSrcset": "assets/room1-08-320.avif 320w, assets/room1-08-480.avif 480w, assets/room1-08-640.avif 640w, assets/room1-08-960.avif 960w, assets/room1-08-1278.avif 1278w"
+      },
+      {
+        "src": "assets/room1-09-1278.webp",
+        "original": "assets/room1-09.jpg",
+        "width": 1278,
+        "height": 1704,
+        "srcset": "assets/room1-09-320.webp 320w, assets/room1-09-480.webp 480w, assets/room1-09-640.webp 640w, assets/room1-09-960.webp 960w, assets/room1-09-1278.webp 1278w",
+        "alt": "明亮日常 · 实拍照片 9",
+        "avifSrcset": "assets/room1-09-320.avif 320w, assets/room1-09-480.avif 480w, assets/room1-09-640.avif 640w, assets/room1-09-960.avif 960w, assets/room1-09-1278.avif 1278w"
+      }
+    ]
+  },
+  {
+    "id": "room2",
+    "name": "暖光栖居",
+    "number": "2",
+    "photos": [
+      {
+        "src": "assets/room2-01-1448.webp",
+        "original": "assets/room2-01.jpg",
+        "width": 1448,
+        "height": 1086,
+        "srcset": "assets/room2-01-320.webp 320w, assets/room2-01-480.webp 480w, assets/room2-01-640.webp 640w, assets/room2-01-960.webp 960w, assets/room2-01-1448.webp 1448w",
+        "alt": "暖光栖居 · 实拍照片 1",
+        "avifSrcset": "assets/room2-01-320.avif 320w, assets/room2-01-480.avif 480w, assets/room2-01-640.avif 640w, assets/room2-01-960.avif 960w, assets/room2-01-1448.avif 1448w"
+      },
+      {
+        "src": "assets/room2-02-1448.webp",
+        "original": "assets/room2-02.jpg",
+        "width": 1448,
+        "height": 1086,
+        "srcset": "assets/room2-02-320.webp 320w, assets/room2-02-480.webp 480w, assets/room2-02-640.webp 640w, assets/room2-02-960.webp 960w, assets/room2-02-1448.webp 1448w",
+        "alt": "暖光栖居 · 实拍照片 2",
+        "avifSrcset": "assets/room2-02-320.avif 320w, assets/room2-02-480.avif 480w, assets/room2-02-640.avif 640w, assets/room2-02-960.avif 960w, assets/room2-02-1448.avif 1448w"
+      },
+      {
+        "src": "assets/room2-03-1086.webp",
+        "original": "assets/room2-03.jpg",
+        "width": 1086,
+        "height": 1448,
+        "srcset": "assets/room2-03-320.webp 320w, assets/room2-03-480.webp 480w, assets/room2-03-640.webp 640w, assets/room2-03-960.webp 960w, assets/room2-03-1086.webp 1086w",
+        "alt": "暖光栖居 · 实拍照片 3",
+        "avifSrcset": "assets/room2-03-320.avif 320w, assets/room2-03-480.avif 480w, assets/room2-03-640.avif 640w, assets/room2-03-960.avif 960w, assets/room2-03-1086.avif 1086w"
+      },
+      {
+        "src": "assets/room2-04-1280.webp",
+        "original": "assets/room2-04.jpg",
+        "width": 1280,
+        "height": 1707,
+        "srcset": "assets/room2-04-320.webp 320w, assets/room2-04-480.webp 480w, assets/room2-04-640.webp 640w, assets/room2-04-960.webp 960w, assets/room2-04-1280.webp 1280w",
+        "alt": "暖光栖居 · 实拍照片 4",
+        "avifSrcset": "assets/room2-04-320.avif 320w, assets/room2-04-480.avif 480w, assets/room2-04-640.avif 640w, assets/room2-04-960.avif 960w, assets/room2-04-1280.avif 1280w"
+      },
+      {
+        "src": "assets/room2-05-1206.webp",
+        "original": "assets/room2-05.jpg",
+        "width": 1206,
+        "height": 807,
+        "srcset": "assets/room2-05-320.webp 320w, assets/room2-05-480.webp 480w, assets/room2-05-640.webp 640w, assets/room2-05-960.webp 960w, assets/room2-05-1206.webp 1206w",
+        "alt": "暖光栖居 · 实拍照片 5",
+        "avifSrcset": "assets/room2-05-320.avif 320w, assets/room2-05-480.avif 480w, assets/room2-05-640.avif 640w, assets/room2-05-960.avif 960w, assets/room2-05-1206.avif 1206w"
+      },
+      {
+        "src": "assets/room2-06-1206.webp",
+        "original": "assets/room2-06.jpg",
+        "width": 1206,
+        "height": 792,
+        "srcset": "assets/room2-06-320.webp 320w, assets/room2-06-480.webp 480w, assets/room2-06-640.webp 640w, assets/room2-06-960.webp 960w, assets/room2-06-1206.webp 1206w",
+        "alt": "暖光栖居 · 实拍照片 6",
+        "avifSrcset": "assets/room2-06-320.avif 320w, assets/room2-06-480.avif 480w, assets/room2-06-640.avif 640w, assets/room2-06-960.avif 960w, assets/room2-06-1206.avif 1206w"
+      },
+      {
+        "src": "assets/room2-07-1206.webp",
+        "original": "assets/room2-07.jpg",
+        "width": 1206,
+        "height": 916,
+        "srcset": "assets/room2-07-320.webp 320w, assets/room2-07-480.webp 480w, assets/room2-07-640.webp 640w, assets/room2-07-960.webp 960w, assets/room2-07-1206.webp 1206w",
+        "alt": "暖光栖居 · 实拍照片 7",
+        "avifSrcset": "assets/room2-07-320.avif 320w, assets/room2-07-480.avif 480w, assets/room2-07-640.avif 640w, assets/room2-07-960.avif 960w, assets/room2-07-1206.avif 1206w"
+      },
+      {
+        "src": "assets/room2-08-1206.webp",
+        "original": "assets/room2-08.jpg",
+        "width": 1206,
+        "height": 899,
+        "srcset": "assets/room2-08-320.webp 320w, assets/room2-08-480.webp 480w, assets/room2-08-640.webp 640w, assets/room2-08-960.webp 960w, assets/room2-08-1206.webp 1206w",
+        "alt": "暖光栖居 · 实拍照片 8",
+        "avifSrcset": "assets/room2-08-320.avif 320w, assets/room2-08-480.avif 480w, assets/room2-08-640.avif 640w, assets/room2-08-960.avif 960w, assets/room2-08-1206.avif 1206w"
+      },
+      {
+        "src": "assets/room2-09-1206.webp",
+        "original": "assets/room2-09.jpg",
+        "width": 1206,
+        "height": 784,
+        "srcset": "assets/room2-09-320.webp 320w, assets/room2-09-480.webp 480w, assets/room2-09-640.webp 640w, assets/room2-09-960.webp 960w, assets/room2-09-1206.webp 1206w",
+        "alt": "暖光栖居 · 实拍照片 9",
+        "avifSrcset": "assets/room2-09-320.avif 320w, assets/room2-09-480.avif 480w, assets/room2-09-640.avif 640w, assets/room2-09-960.avif 960w, assets/room2-09-1206.avif 1206w"
+      }
+    ]
+  },
+  {
+    "id": "room3",
+    "name": "天空塔景",
+    "number": "3",
+    "photos": [
+      {
+        "src": "assets/room3-01-1206.webp",
+        "original": "assets/room3-01.jpg",
+        "width": 1206,
+        "height": 808,
+        "srcset": "assets/room3-01-320.webp 320w, assets/room3-01-480.webp 480w, assets/room3-01-640.webp 640w, assets/room3-01-960.webp 960w, assets/room3-01-1206.webp 1206w",
+        "alt": "天空塔景 · 实拍照片 1",
+        "avifSrcset": "assets/room3-01-320.avif 320w, assets/room3-01-480.avif 480w, assets/room3-01-640.avif 640w, assets/room3-01-960.avif 960w, assets/room3-01-1206.avif 1206w"
+      },
+      {
+        "src": "assets/room3-02-1206.webp",
+        "original": "assets/room3-02.jpg",
+        "width": 1206,
+        "height": 801,
+        "srcset": "assets/room3-02-320.webp 320w, assets/room3-02-480.webp 480w, assets/room3-02-640.webp 640w, assets/room3-02-960.webp 960w, assets/room3-02-1206.webp 1206w",
+        "alt": "天空塔景 · 实拍照片 2",
+        "avifSrcset": "assets/room3-02-320.avif 320w, assets/room3-02-480.avif 480w, assets/room3-02-640.avif 640w, assets/room3-02-960.avif 960w, assets/room3-02-1206.avif 1206w"
+      },
+      {
+        "src": "assets/room3-03-1206.webp",
+        "original": "assets/room3-03.jpg",
+        "width": 1206,
+        "height": 808,
+        "srcset": "assets/room3-03-320.webp 320w, assets/room3-03-480.webp 480w, assets/room3-03-640.webp 640w, assets/room3-03-960.webp 960w, assets/room3-03-1206.webp 1206w",
+        "alt": "天空塔景 · 实拍照片 3",
+        "avifSrcset": "assets/room3-03-320.avif 320w, assets/room3-03-480.avif 480w, assets/room3-03-640.avif 640w, assets/room3-03-960.avif 960w, assets/room3-03-1206.avif 1206w"
+      },
+      {
+        "src": "assets/room3-04-1206.webp",
+        "original": "assets/room3-04.jpg",
+        "width": 1206,
+        "height": 899,
+        "srcset": "assets/room3-04-320.webp 320w, assets/room3-04-480.webp 480w, assets/room3-04-640.webp 640w, assets/room3-04-960.webp 960w, assets/room3-04-1206.webp 1206w",
+        "alt": "天空塔景 · 实拍照片 4",
+        "avifSrcset": "assets/room3-04-320.avif 320w, assets/room3-04-480.avif 480w, assets/room3-04-640.avif 640w, assets/room3-04-960.avif 960w, assets/room3-04-1206.avif 1206w"
+      },
+      {
+        "src": "assets/room3-05-1206.webp",
+        "original": "assets/room3-05.jpg",
+        "width": 1206,
+        "height": 784,
+        "srcset": "assets/room3-05-320.webp 320w, assets/room3-05-480.webp 480w, assets/room3-05-640.webp 640w, assets/room3-05-960.webp 960w, assets/room3-05-1206.webp 1206w",
+        "alt": "天空塔景 · 实拍照片 5",
+        "avifSrcset": "assets/room3-05-320.avif 320w, assets/room3-05-480.avif 480w, assets/room3-05-640.avif 640w, assets/room3-05-960.avif 960w, assets/room3-05-1206.avif 1206w"
+      }
+    ]
+  }
+]

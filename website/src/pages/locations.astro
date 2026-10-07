@@ -1,0 +1,4 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';import LocationsSection from '../sections/LocationsSection.astro';import ResponsiveImage from '../components/ResponsiveImage.astro';import {photos} from '../data/properties';import {landscapes} from '../data/landscapes';
+---
+<BaseLayout title="奥克兰住宿位置" image={photos.room1[4].src}><section class="page-heading container"><p class="section-label">Our Auckland</p><h1 class="display">The city,<br><em>within reach.</em></h1><p>从 Victoria Street West，开始你的奥克兰日常。</p></section><div class="container locations-cover city-cover"><ResponsiveImage photo={landscapes.city} priority/></div><LocationsSection/><section class="container neighbourhood-note"><h2>在城市中心生活。</h2><p>当前三套住宿均位于 Auckland CBD 的 147 Victoria Street West。靠近天空塔，临近各大超市，也便于通过高速出行。</p><p>具体出行时间可在地图中查询；其他区域的房源会在确认后加入。</p><a class="text-link" href="/stays/">查看这里的住宿</a></section></BaseLayout>

@@ -1,0 +1,4 @@
+---
+import Logo from './Logo.astro';import {brand} from '../data/brand';
+---
+<footer class="footer"><div class="container footer-main"><div class="footer-brand"><Logo footer/><p>Thoughtful spaces.<br>Auckland, New Zealand.</p></div><nav aria-label="页脚导航">{brand.nav.map(item=><a href={item.href}>{item.label}</a>)}<a href="/gallery/">影像集</a></nav><div class="footer-contact"><span>开始你的入住计划</span><a href="/contact/">微信联系我们</a><a href="/booking/">预订与付款</a>{brand.email&&<a href={`mailto:${brand.email}`}>{brand.email}</a>}{brand.instagram&&<a href={brand.instagram} target="_blank" rel="noopener noreferrer">Instagram</a>}</div></div><div class="container footer-bottom"><small>© {new Date().getFullYear()} Victoria House</small><div><a href="/photography/">摄影来源</a><a href="/privacy/">隐私说明</a><a href="/terms/">入住与付款须知</a></div><a href="#main" class="back-top">回到顶部</a></div></footer>

@@ -1,0 +1,5 @@
+---
+import {safeExternalUrl,enquiryUrl,type Property} from '../data/properties';
+const {property:p}=Astro.props as {property:Property};const booking=safeExternalUrl(p.bookingUrl),payment=safeExternalUrl(p.paymentUrl);
+---
+<div class="booking-links">{booking?<a class="button" href={booking} target="_blank" rel="noopener noreferrer">前往预订平台</a>:<a class="button" href={enquiryUrl(p)}>咨询这套住宿</a>}{payment&&<a class="button button-outline" href={payment} target="_blank" rel="noopener noreferrer">前往安全付款</a>}<p class="booking-help">{booking||payment?'将在新页面打开收款或预订平台，请核对入住信息与金额。':'入住日期、费用和租期确认后，我们会通过微信提供付款链接。'}</p></div>

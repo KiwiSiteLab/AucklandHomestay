@@ -1,0 +1,5 @@
+---
+import type {Property} from '../data/properties';
+const {property:p}=Astro.props as {property:Property};
+---
+<div class="location-map"><iframe src={p.map.embedUrl} title={`${p.name} 在 Google 地图上的位置`} loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe><a href={p.map.searchUrl} target="_blank" rel="noopener noreferrer" class="map-external">在 Google 地图中查看</a></div>

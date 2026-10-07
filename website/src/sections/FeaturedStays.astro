@@ -1,0 +1,4 @@
+---
+import PropertyPreview from '../components/PropertyPreview.astro';import {featuredProperties} from '../data/properties';
+---
+<section class="section container featured-stays"><div class="section-intro"><p class="section-label">Our collection</p><h2 class="display">Places to call<br><em>your own.</em></h2><p>独立住宿，各有不同的居住氛围。<br>找到适合你生活节奏的空间。</p></div><div class="featured-grid">{featuredProperties.slice(0,3).map((p,i)=><PropertyPreview property={p} class={`featured-${i}`}/>)}</div><div class="section-end"><a class="text-link" href="/stays/">查看全部住宿</a></div></section>

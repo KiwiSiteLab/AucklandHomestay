@@ -1,0 +1,248 @@
+@media(max-width:1100px) and (min-width:761px){.site-header{gap:20px}
+.logo-wordmark{font-size:25px}
+.desktop-nav{gap:22px;font-size:13px}
+.header-book{padding-inline:18px}
+.featured-grid{gap:60px 7%}
+.featured-1{padding-top:120px}
+.experience-layout{gap:8%}
+.booking-property{grid-template-columns:190px 1fr;gap:30px}
+.booking-property>.booking-links{grid-column:2}
+.booking-property-photo{grid-row:1/3;align-self:start}
+.about-principles{gap:35px}
+.contact-layout{gap:8%}
+}
+
+@media(max-width:760px){html{scroll-padding-top:88px}
+.site-header{height:80px;padding-inline:24px;gap:16px}
+.logo{gap:10px}
+.logo-monogram{font-size:38px;width:35px}
+.logo-monogram span{font-size:23px;left:18px;top:14px}
+.logo-wordmark{font-size:24px}
+.logo-wordmark small{font-size:8px;letter-spacing:.11em;margin-top:6px}
+.desktop-nav,.header-book{display:none}
+.menu-toggle{width:44px;height:44px;display:flex;flex-direction:column;gap:7px;align-items:center;justify-content:center}
+.menu-toggle span{width:25px;height:1px;background:currentColor}
+.mobile-menu{padding-top:18px;overflow-y:auto}
+.mobile-menu nav{padding-block:35px;gap:17px}
+.mobile-menu nav a{font-size:39px}
+.menu-bottom{padding-top:22px}
+.menu-bottom>.button{width:100%}
+.display{font-size:clamp(43px,11.8vw,72px);line-height:1.08}
+.section-label{font-size:11px;margin-bottom:21px}
+.brand-hero{height:100svh;min-height:610px;max-height:950px}
+.hero-copy{padding-bottom:140px}
+.hero-location{font-size:11px;letter-spacing:.085em;margin-bottom:25px}
+.hero-copy h1{font-size:clamp(68px,18vw,105px);max-width:320px;line-height:.96}
+.hero-copy>p{font-size:15px;letter-spacing:.02em;margin-top:27px}
+.hero-actions{gap:25px;margin-top:28px}
+.hero-actions .button{padding-inline:25px;min-height:50px}
+.hero-secondary{font-size:14px}
+.hero-local-shade{background:radial-gradient(ellipse at 17% 77%,rgba(23,24,22,.5),transparent 80%)}
+.hero-controls{right:24px;bottom:25px;gap:12px}
+.hero-pause{font-size:12px}
+.brand-introduction .display{font-size:clamp(43px,11.5vw,65px)}
+.brand-introduction>p:not(.section-label){font-size:15px;line-height:2.15;margin-top:25px}
+.brand-introduction .text-link{margin-top:23px}
+.section-intro{padding-bottom:37px}
+.section-intro .display{font-size:55px}
+.section-intro>p:not(.section-label){font-size:15px;margin-top:25px}
+.featured-grid{display:flex;flex-direction:column;gap:55px}
+.featured-1{padding-top:0;width:85%;align-self:end}
+.featured-2{display:block;width:100%;margin-top:0}
+.featured-0 .property-photo img{aspect-ratio:4/3}
+.featured-1 .property-photo img{aspect-ratio:4/5}
+.featured-2 .property-photo img{aspect-ratio:4/3}
+.property-preview-copy{padding-top:20px}
+.property-area{font-size:12px}
+.property-preview h3{font-size:36px}
+.property-cn{font-size:14px}
+.property-short{font-size:14px;line-height:1.9;margin-top:16px}
+.property-preview .text-link{margin-top:17px}
+.section-end{margin-top:35px}
+.experience-layout{grid-template-columns:1fr;gap:40px}
+.experience-photo{width:86%}
+.experience-photo img{aspect-ratio:4/5}
+.experience-copy{padding-top:0}
+.experience-copy .display{font-size:55px}
+.experience-copy h3{font-size:24px;margin-top:23px}
+.experience-copy>p{font-size:15px}
+.experience-detail{margin-top:42px;max-width:none;width:72%;margin-left:auto}
+.experience-detail small{font-size:12px}
+.image-break{height:520px}
+.image-break>picture>img{object-position:60% 50%}
+.image-break>div{padding:60px 24px}
+.image-break p{font-size:45px}
+.location-intro{padding-bottom:35px}
+.location-intro .display{font-size:48px}
+.location-intro>p{font-size:15px;margin-top:25px}
+.location-layout{grid-template-columns:1fr;gap:35px}
+.location-index{padding-top:25px}
+.location-index h3{font-size:34px}
+.location-property-list{gap:15px;margin-top:28px;margin-bottom:20px}
+.location-map{height:360px}
+.map-external{bottom:12px;left:12px;padding:10px 14px;font-size:12px}
+.gallery-intro{display:block;margin-bottom:35px}
+.gallery-intro .display{font-size:57px}
+.gallery-intro p{font-size:14px;padding:0;margin-top:24px}
+.editorial-gallery{grid-template-columns:1fr;gap:32px}
+.gallery-item-1,.gallery-item-2,.gallery-item-3{padding:0;margin:0;width:100%}
+.gallery-item-1{width:87%;justify-self:end}
+.gallery-item-2{width:88%;justify-self:start}
+.gallery-item-0 .gallery-photo img{aspect-ratio:4/5}
+.gallery-item-1 .gallery-photo img{aspect-ratio:3/2}
+.gallery-item-2 .gallery-photo img{aspect-ratio:3/2}
+.gallery-item-3 .gallery-photo img{aspect-ratio:4/5}
+.gallery-open{opacity:1;font-size:20px;width:28px;height:28px}
+.values-layout{grid-template-columns:1fr;gap:45px}
+.values-layout .display{font-size:53px}
+.values-layout>div>p{font-size:15px;margin-top:24px}
+.values-list h3{font-size:23px}
+.values-list>div{padding:23px 0 25px}
+.booking-cta{height:530px}
+.booking-cta>picture>img{object-position:72% 50%}
+.booking-cta-shade{background:radial-gradient(ellipse at 18% 48%,rgba(23,24,22,.6),transparent 90%)}
+.booking-cta-copy .display{font-size:clamp(46px,12.5vw,66px)}
+.booking-cta-copy>p{font-size:14px;line-height:1.9;margin-top:24px}
+.booking-cta-copy>div{gap:25px;margin-top:28px}
+.footer{padding:55px 0 25px}
+.footer-main{grid-template-columns:1fr 1fr;gap:35px 30px}
+.footer-brand{grid-column:1/-1}
+.logo-footer .logo-wordmark{font-size:31px}
+.footer-brand>p{font-size:24px;margin-top:22px}
+.footer-main nav{grid-template-columns:1fr;gap:7px}
+.footer-main a:not(.logo){min-height:37px}
+.footer-contact{font-size:14px}
+.footer-bottom{flex-wrap:wrap;gap:20px;margin-top:40px;padding-top:24px}
+.footer-bottom>div{gap:18px}
+.back-top{margin-left:auto}
+.page-heading{padding-top:150px;padding-bottom:55px}
+.page-heading>.display{font-size:clamp(58px,16vw,83px);line-height:1.06}
+.page-heading>p:not(.section-label){font-size:15px;margin-top:28px}
+.heading-bottom{display:block;margin-top:28px}
+.heading-bottom p{font-size:15px}
+.heading-bottom>span{display:block;margin-top:25px}
+.stays-list{gap:65px}
+.stay-row,.stay-row-1{display:block}
+.stay-row-1 .property-photo,.stay-row-1 .property-preview-copy{order:initial}
+.stay-row .property-preview-copy{padding-top:23px}
+.stay-row .property-photo img{aspect-ratio:4/3}
+.stay-row h3{font-size:38px}
+.stay-row .property-short{font-size:15px;margin-top:20px}
+.property-heading{padding-top:119px;padding-bottom:30px}
+.breadcrumbs{margin-bottom:29px;font-size:12px}
+.property-heading .display{font-size:clamp(47px,13.7vw,70px);line-height:1.05;overflow-wrap:normal}
+.property-heading-bottom{display:block;margin-top:20px}
+.property-heading-bottom p{font-size:13px;line-height:1.8}
+.property-heading-bottom .text-link{margin-top:16px}
+.property-hero-image{width:100%}
+.property-hero-image>picture>img{height:440px;object-position:60% center}
+.property-overview{grid-template-columns:1fr;gap:45px}
+.property-description h2{font-size:31px;margin-bottom:25px}
+.property-description p{font-size:15px;line-height:2.1}
+.property-summary{padding-top:25px}
+.known-facts{grid-template-columns:1fr 1fr;gap:16px;font-size:14px}
+.property-summary address{font-size:23px;margin-top:25px}
+.property-summary small{margin-top:15px}
+.property-gallery-section .display{font-size:55px}
+.amenities-section{padding:55px 0}
+.amenities-layout{grid-template-columns:1fr;gap:30px}
+.amenities-layout h2{font-size:30px}
+.amenities-layout ul{gap:10px 25px}
+.amenities-layout li{font-size:14px;padding-block:13px}
+.detail-location{grid-template-columns:1fr;gap:35px}
+.detail-location .display{font-size:51px}
+.detail-location h3{font-size:14px}
+.detail-location address{font-size:23px}
+.property-booking-inner{grid-template-columns:1fr;gap:33px}
+.property-booking-inner .display{font-size:53px}
+.property-booking-inner>div>p{font-size:14px}
+.booking-help{font-size:13px}
+.related-stays>h2{font-size:48px;margin-bottom:35px}
+.related-grid{grid-template-columns:1fr;gap:50px}
+.related-grid .property-photo img{aspect-ratio:3/2}
+.editorial-story,.story-reverse{grid-template-columns:1fr;gap:35px}
+.story-copy h2{font-size:31px;margin-bottom:24px}
+.story-copy p{font-size:15px}
+.story-reverse .story-image,.story-reverse .story-copy{order:initial}
+.story-image img{aspect-ratio:4/5}
+.gallery-filters{gap:10px 22px;padding-block:10px;margin-bottom:45px}
+.gallery-filters button{font-size:13px}
+.gallery-collection+.gallery-collection{margin-top:75px}
+.gallery-collection-heading{display:block;margin-bottom:28px}
+.gallery-collection-heading h2{font-size:38px}
+.gallery-collection-heading .text-link{margin-top:13px}
+.locations-cover img{height:400px}
+.neighbourhood-note h2{font-size:30px}
+.neighbourhood-note p{font-size:15px}
+.about-introduction{grid-template-columns:1fr;gap:35px}
+.about-copy h2{font-size:31px;margin-bottom:26px}
+.about-copy p{font-size:15px}
+.about-introduction>picture>img{aspect-ratio:4/5}
+.about-principles{grid-template-columns:1fr;gap:35px}
+.about-principles>div{border-top:1px solid var(--line);padding-top:25px}
+.about-principles h2{font-size:26px}
+.contact-layout{grid-template-columns:1fr;gap:65px;padding-top:5px}
+.form-intro{padding-top:23px;margin-bottom:30px}
+.form-grid{gap:23px 16px}
+.form-grid label{font-size:14px}
+.form-grid input,.form-grid select{padding-inline:8px;font-size:16px}
+.form-grid select{font-size:13px}
+.form-spacer{display:none}
+.form-submit{flex-direction:column;align-items:start;gap:15px;margin-top:25px}
+.form-submit>.button{width:100%}
+.form-submit small{font-size:12px}
+.enquiry-result>div{flex-direction:column;align-items:stretch;gap:15px}
+.enquiry-result>div .text-link{align-self:start}
+.contact-aside{padding-top:25px}
+.contact-qr{width:220px}
+.contact-aside-details{margin-top:30px}
+.booking-property{grid-template-columns:1fr;gap:24px;padding:32px 0 40px}
+.booking-property-photo img{height:auto;aspect-ratio:3/2}
+.booking-property h2{font-size:37px}
+.booking-property>.booking-links{grid-column:auto;max-width:100%}
+.booking-property>.booking-links .button{width:100%}
+.booking-page-list{padding-bottom:35px}
+.booking-note h2{font-size:28px}
+.booking-note p{font-size:15px}
+.policy-page{padding-top:145px;padding-bottom:90px}
+.policy-page h1{font-size:33px;margin-bottom:35px}
+.policy-page h2{font-size:24px}
+.policy-page p{font-size:15px}
+.not-found{padding-block:160px 100px}
+.not-found .display{font-size:70px}
+.not-found>p:not(.section-label){font-size:15px}
+.lightbox-header{height:74px;padding:15px 16px}
+.lightbox-header>div{gap:12px}
+.lightbox-header span{font-size:21px}
+.lightbox-header small{font-size:12px}
+.lightbox-stage{height:calc(100dvh - 150px);padding:10px 0 65px}
+.lightbox-prev,.lightbox-next{top:auto;bottom:12px;width:44px;height:44px;background:rgba(243,240,233,.08)}
+.lightbox-prev{left:20px}
+.lightbox-next{right:20px}
+.lightbox-footer{height:76px;padding:14px 18px;gap:15px}
+.lightbox-footer p{font-size:12px}
+.lightbox-footer a{font-size:12px;white-space:nowrap}
+.wechat-inner{padding:49px 22px 25px}
+.wechat-inner h2{font-size:24px}
+.toast{bottom:22px;padding:12px 18px;font-size:13px}
+}
+
+@media(max-width:360px){.logo-wordmark{font-size:21px}
+.logo-monogram{font-size:34px;width:31px}
+.logo-monogram span{left:17px;top:13px;font-size:20px}
+.section-intro .display,.experience-copy .display,.values-layout .display{font-size:48px}
+.property-preview h3{font-size:32px}
+.location-intro .display{font-size:42px}
+.gallery-intro .display{font-size:47px}
+.form-grid{grid-template-columns:1fr}
+.hero-copy h1{font-size:64px}
+.property-heading .display{font-size:43px}
+.footer-main{gap:25px}
+}
+
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}
+*,*:before,*:after{transition:none!important;animation:none!important}
+
+.hero-controls{display:none}
+}
+

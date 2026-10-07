@@ -1,0 +1,7 @@
+---
+import ResponsiveImage from './ResponsiveImage.astro';import {propertyUrl,type Property} from '../data/properties';
+interface Props{property:Property;class?:string;priority?:boolean;}
+const {property:p,class:className='',priority=false}=Astro.props;
+const facts=[p.bedrooms!==null?`${p.bedrooms} 间卧室`:null,p.guests!==null?`${p.guests} 位住客`:null].filter(Boolean).join(' · ');
+---
+<article data-reveal class:list={['property-preview',className]}><a class="property-photo" href={propertyUrl(p)} aria-label={`查看 ${p.name}`}><ResponsiveImage photo={p.heroImage} priority={priority}/></a><div class="property-preview-copy"><span class="property-area">{p.location}</span><h3><a href={propertyUrl(p)}>{p.name}</a></h3><p class="property-cn">{p.chineseName}</p>{facts&&<p class="property-facts">{facts}</p>}<p class="property-short">{p.shortDescription}</p><a class="text-link" href={propertyUrl(p)}>探索这套住宿</a></div></article>

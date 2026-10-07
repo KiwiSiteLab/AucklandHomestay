@@ -1,0 +1,6 @@
+---
+import type {Photo} from '../data/properties';
+interface Props {photo:Photo;class?:string;priority?:boolean;sizes?:string;position?:string;deferred?:boolean;}
+const {photo,class:className='',priority=false,sizes='(max-width: 760px) calc(100vw - 48px), 60vw',position=photo.position,deferred=false}=Astro.props;
+---
+<picture class="responsive-picture">{photo.avifSrcset&&<source type="image/avif" srcset={deferred?undefined:photo.avifSrcset} data-deferred-srcset={deferred?photo.avifSrcset:undefined} sizes={sizes}/>}<img class={className} src={deferred?undefined:photo.src} srcset={deferred?undefined:photo.srcset} data-deferred-src={deferred?photo.src:undefined} data-deferred-srcset={deferred?photo.srcset:undefined} sizes={sizes} width={photo.width} height={photo.height} alt={photo.alt} loading={priority?'eager':'lazy'} fetchpriority={priority?'high':'auto'} decoding="async" style={position?`object-position:${position}`:undefined}/></picture>

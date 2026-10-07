@@ -1,0 +1,4 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';import PropertyPreview from '../../components/PropertyPreview.astro';import BookingCTA from '../../sections/BookingCTA.astro';import {properties} from '../../data/properties';
+---
+<BaseLayout title="独立住宿与房源" description="探索 Victoria House 在奥克兰 CBD 的三套独立住宿。查看真实照片、空间介绍与位置，选择适合你的城市生活。" image={properties[0].heroImage.src}><section class="page-heading container"><p class="section-label">The collection</p><h1 class="display">A place<br>of <em>your own.</em></h1><div class="heading-bottom"><p>三套独立住宿，三种居住氛围。<br>找到适合你的奥克兰日常。</p><span class="small-note">Auckland CBD · {properties.length} 套住宿</span></div></section><section class="container stays-list" aria-label="所有房源">{properties.map((p,i)=><PropertyPreview property={p} class={`stay-row stay-row-${i%2}`} priority={i===0}/>)}</section><BookingCTA/></BaseLayout>
