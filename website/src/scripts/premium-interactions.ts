@@ -26,8 +26,19 @@ export function initPremiumInteractions(){
   });frame=moving?requestAnimationFrame(step):0;
  };
  function wake(){if(!frame){last=performance.now();frame=requestAnimationFrame(step);}}
+ let touchId:number|null=null,touchControl:HTMLElement|null=null,touchMedia:HTMLElement|null=null,releaseTimer:ReturnType<typeof setTimeout>|undefined,pendingRelease:(()=>void)|null=null;
+ const mediaSelector='.property-photo,.gallery-item button,.experience-photo,.about-photo,.story-photo,.about-image,.story-image,.nav-property,.mobile-property';
+ function moveTouch(event:PointerEvent){
+  if(touchControl&&!touchControl.matches('input,select,textarea')&&!touchControl.querySelector('img')){const b=touchControl.getBoundingClientRect();setTarget(touchControl,Math.max(-5,Math.min(5,(event.clientX-b.left-b.width/2)*.09)),Math.max(-3,Math.min(3,(event.clientY-b.top-b.height/2)*.12)),'control');}
+  if(touchMedia){const b=touchMedia.getBoundingClientRect();if(b.width&&b.height){setTarget(touchMedia,((event.clientX-b.left)/b.width-.5)*12,((event.clientY-b.top)/b.height-.5)*8,'image');touchMedia.style.setProperty('--light-x',`${(event.clientX-b.left)/b.width*100}%`);touchMedia.style.setProperty('--light-y',`${(event.clientY-b.top)/b.height*100}%`);}}wake();
+ }
+ function releaseTouch(immediate=false){
+  clearTimeout(releaseTimer);pendingRelease?.();pendingRelease=null;touchId=null;const control=touchControl,picture=touchMedia;touchControl=null;touchMedia=null;clearTimeout(releaseTimer);
+  const release=()=>{control?.classList.remove('ui-touching','ui-hover');if(control)setTarget(control,0,0,'control');picture?.classList.remove('ui-media-active');if(picture)setTarget(picture,0,0,'image');wake();};
+  if(immediate)release();else{pendingRelease=release;releaseTimer=setTimeout(()=>{pendingRelease=null;release();},170);}
+ }
  document.addEventListener('pointermove',event=>{
-  if(event.pointerType!=='mouse')return;
+  if(event.pointerType==='touch'){if(event.pointerId===touchId)moveTouch(event);return;}if(event.pointerType!=='mouse')return;
   document.documentElement.dataset.pointerMode='mouse';px=event.clientX;py=event.clientY;if(!seen){cx=px;cy=py;seen=true;}aura.classList.add('is-visible');
   const node=event.target instanceof Element?event.target:null;if(!node)return;const next=node.closest<HTMLElement>(clickables);
   if(active!==next){if(active){setTarget(active,0,0,'control');active.classList.remove('ui-hover');}active=next;active?.classList.add('ui-hover');}
@@ -36,14 +47,22 @@ export function initPremiumInteractions(){
    const b=active.getBoundingClientRect(),m=motions.get(active);const dx=px-(b.left-(m?.x||0)+b.width/2),dy=py-(b.top-(m?.y||0)+b.height/2);
    setTarget(active,Math.max(-8,Math.min(8,dx*.12)),Math.max(-5,Math.min(5,dy*.16)),'control');
   }
-  const nextMedia=node.closest<HTMLElement>('.property-photo,.gallery-item button,.experience-photo,.about-photo,.story-photo,.about-image,.story-image,.nav-property');
+  const nextMedia=node.closest<HTMLElement>(mediaSelector);
   if(nextMedia!==media){if(media){setTarget(media,0,0,'image');media.classList.remove('ui-media-active');}media=nextMedia;if(media){media.classList.add('ui-media','ui-media-active');}}
   if(media){const b=media.getBoundingClientRect();if(b.width&&b.height){setTarget(media,((px-b.left)/b.width-.5)*14,((py-b.top)/b.height-.5)*10,'image');media.style.setProperty('--light-x',`${(px-b.left)/b.width*100}%`);media.style.setProperty('--light-y',`${(py-b.top)/b.height*100}%`);}}
   wake();
  },{passive:true});
- document.addEventListener('pointerdown',event=>{if(event.pointerType==='touch'){document.documentElement.dataset.pointerMode='touch';aura.classList.remove('is-visible');reset();}else aura.classList.add('is-pressed');});
- document.addEventListener('pointerup',()=>aura.classList.remove('is-pressed'));document.addEventListener('pointercancel',()=>{aura.classList.remove('is-pressed');reset();});
- document.addEventListener('pointerout',event=>{if(!event.relatedTarget){reset();aura.classList.remove('is-visible');}});window.addEventListener('blur',()=>{reset();aura.classList.remove('is-visible');});document.addEventListener('scroll',reset,{passive:true});
+ document.addEventListener('pointerdown',event=>{if(event.pointerType==='touch'){
+  releaseTouch(true);document.documentElement.dataset.pointerMode='touch';aura.classList.remove('is-visible');reset();touchId=event.pointerId;
+  const node=event.target instanceof Element?event.target:null;touchControl=node?.closest<HTMLElement>(clickables)||null;touchMedia=node?.closest<HTMLElement>(mediaSelector)||null;
+  touchControl?.classList.add('ui-touch-target','ui-touching','ui-hover');if(touchMedia)touchMedia.classList.add('ui-media','ui-media-active');moveTouch(event);
+  if(touchControl&&!touchControl.matches('input,select,textarea')){const b=touchControl.getBoundingClientRect(),wave=document.createElement('span');wave.className='ui-touch-wave';wave.setAttribute('aria-hidden','true');touchControl.append(wave);const center=`${event.clientX-b.left}px ${event.clientY-b.top}px`;wave.animate([{clipPath:`circle(0px at ${center})`,opacity:.2},{clipPath:`circle(${Math.hypot(b.width,b.height)}px at ${center})`,opacity:0}],{duration:650,easing:'cubic-bezier(.22,1.18,.36,1)'}).finished.catch(()=>{}).then(()=>wave.remove());}
+ }else aura.classList.add('is-pressed');},{passive:true});
+ document.addEventListener('pointerup',event=>{aura.classList.remove('is-pressed');if(event.pointerId===touchId)releaseTouch();},{passive:true});document.addEventListener('pointercancel',()=>{releaseTouch(true);aura.classList.remove('is-pressed');reset();});
+ document.addEventListener('pointerout',event=>{if(!event.relatedTarget&&event.pointerType==='mouse'){reset();aura.classList.remove('is-visible');}});window.addEventListener('blur',()=>{releaseTouch(true);reset();aura.classList.remove('is-visible');});document.addEventListener('scroll',()=>{releaseTouch(true);reset();},{passive:true});
+ document.querySelectorAll<HTMLButtonElement>('[data-mobile-collection-toggle]').forEach(toggle=>{const panel=document.getElementById(toggle.getAttribute('aria-controls')||'');toggle.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')!=='true';toggle.setAttribute('aria-expanded',String(open));if(panel){panel.classList.toggle('is-open',open);panel.inert=!open;}});});
+ // Touch screens receive the same image light/scale language when cards enter the viewport.
+ if(matchMedia('(pointer:coarse)').matches){const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){const node=entry.target as HTMLElement;node.classList.add('touch-in-view');observer.unobserve(node);}});},{threshold:.12});document.querySelectorAll<HTMLElement>('.property-preview,.gallery-item,.experience-photo').forEach(node=>{if(node.getBoundingClientRect().top>innerHeight){node.classList.add('touch-reveal');observer.observe(node);}});}
  // Stripe-style anchored navigation: pointer, button and keyboard share the same panel state.
  const popover=document.querySelector<HTMLElement>('[data-nav-popover]');const triggers=[...document.querySelectorAll<HTMLButtonElement>('[data-nav-trigger]')],panels=[...document.querySelectorAll<HTMLElement>('[data-nav-panel]')];let closeTimer:ReturnType<typeof setTimeout>|undefined;
  function closeNav(){popover?.classList.remove('is-open');triggers.forEach(t=>t.setAttribute('aria-expanded','false'));panels.forEach(p=>p.inert=true);}
