@@ -1,6 +1,6 @@
 ---
 import Logo from './Logo.astro';import {brand} from '../data/brand';import {properties} from '../data/properties';
-const {overlay=false}=Astro.props;const current=Astro.url.pathname;
+const {overlay=false}=Astro.props;const base=import.meta.env.BASE_URL.replace(/\/$/,'');const current=base&&Astro.url.pathname.startsWith(base)?Astro.url.pathname.slice(base.length)||'/':Astro.url.pathname;
 ---
 <header id="site-header" class:list={['site-header',{'header-overlay':overlay}]}>
   <Logo/><nav class="desktop-nav" aria-label="主导航">{brand.nav.map((item,i)=><div class="nav-item" data-nav-item={i<2?String(i):undefined}><a href={item.href} aria-current={current.startsWith(item.href)?'page':undefined}>{item.label}</a>{i<2&&<button class="nav-trigger" data-nav-trigger={i} aria-label={`展开${item.label}`} aria-expanded="false" aria-controls={`nav-panel-${i}`}><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="m3 4.5 3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></button>}</div>)}</nav>
